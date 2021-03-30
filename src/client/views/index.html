@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test</title>
+    </head>
+    <body>
+        <header>
+            <div class="">
+                <img src="https://cu1.uicdn.net/d58/6db58c1ec9c835f41b07f17b625c9/webapp/25716-logo-generator.svg" class="logo" />
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="form-container">
+                    <form id="dateTravelForm" class="form" onsubmit="return Client.handleSubmit(event)">
+                        <div class="input">
+                            <label for="city">City</label>
+                            <input name="city" id="city" placeholder="enter city here">
+                        </div>
+                        <div class="input">
+                            <label for="start_date">Start Date</label>
+                            <input name="start_date" id="start_date" type="date" />
+                        </div>
+                        <div class="input">
+                            <label for="end_date">End Date</label>
+                            <input name="end_date" id="end_date" type="date" />
+                        </div>
+                    </form>
+                    <div class="button-container">
+                        <button id="dateTravelFormSubmitButton">Submit</button>
+                    </div>
+                </div>
+            <section>
+            <section>
+                <div id="content" />
+            </section>
+        </main>
+        <footer>
+            <p>Footer Lorem Ipsum</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>

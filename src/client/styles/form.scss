@@ -1,0 +1,31 @@
+.form-container {
+  border: 1px solid #545454;
+  border-radius: 3px;
+  padding: 40px;
+}
+
+.form {
+  display: flex;
+}
+
+.input {
+  width: 33%;
+  padding: 5px 0px;
+  flex: none;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 10px 0;
+  border: 1px solid #c0c1c6;
+}
+
+.button-container {
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+  }
+  .input {
+    width: 100%;
+  }
+}
