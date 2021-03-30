@@ -27,7 +27,7 @@ const handleSubmit = (e) => {
     return false;
   }
 
-  fetch("http://localhost:3001/submitform", {
+  fetch("http://localhost:3000/submitform", {
     method: "POST",
     credentials: "same-origin",
     headers: { "Content-Type": "application/json" },

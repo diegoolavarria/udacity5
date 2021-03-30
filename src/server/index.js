@@ -70,8 +70,8 @@ app.post("/submitform", async (req, res) => {
     });
 });
 
-const server = app.listen(3001, () =>
-  console.log("Example app listening on port 3001!")
+const server = app.listen(3000, () =>
+  console.log("Example app listening on port 3000!")
 );
 
 const getDataFromGeoNames = async ({ city }) => {
