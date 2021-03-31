@@ -18,6 +18,27 @@ h3 {
   text-align: center;
 }
 
+button {
+  cursor: pointer;
+  text-transform: none;
+  padding: 0 12px;
+  letter-spacing: 0.1px;
+  outline: none !important;
+  outline-offset: none !important;
+  box-shadow: none;
+  color: #fff;
+  background: #0078c8;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #008deb;
+  transform: none;
+  box-shadow: none;
+}
+
 .logo {
   height: 70px;
 }
